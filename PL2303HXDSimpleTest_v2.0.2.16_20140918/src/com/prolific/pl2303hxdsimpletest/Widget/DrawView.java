@@ -21,6 +21,9 @@ public  class DrawView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
+
+
+
         canvas.drawColor(Color.WHITE);
         Paint paint = new Paint();
         paint.setAntiAlias(true);
