@@ -206,6 +206,8 @@
                     android:id="@+id/spring_progress_view_voc"
                     android:layout_gravity="center_vertical|right"
                     android:layout_marginRight="30dp"
+
+
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true" />
             </RelativeLayout>
