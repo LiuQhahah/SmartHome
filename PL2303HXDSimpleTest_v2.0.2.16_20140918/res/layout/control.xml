@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ui"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.75"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="室内空气调节"
+        android:gravity="center_horizontal"
+        android:textSize="45dp"
+        android:textColor="#ffc93b09"
+        android:layout_marginTop="30px" />
+        <FrameLayout
+            android:id="@+id/fl_control"
+            android:layout_width="match_parent"
+            android:layout_height="4px"/>
+    </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_duli_title"
+                android:layout_width="wrap_content"
+                android:layout_height="45px"
+                android:text="独立净化器"
+                android:textSize="25px"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:textColor="#ffffea3c"
+                android:gravity="bottom|right"
+                android:layout_marginRight="260dp" />
+
+
+
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1">
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="0dp"
+            android:layout_gravity="right"
+            android:layout_weight="5">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1.35">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button"
+                    android:layout_weight="0.2">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="危"
+                        android:textSize="30sp"
+                        android:id="@+id/textView3"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffafb0ff"
+                        android:layout_marginTop="20dp" />
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="害"
+                        android:textSize="30sp"
+                        android:textColor="#ffafb0ff"
+                        android:layout_centerInParent="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="物"
+                        android:textSize="30sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffafb0ff"
+                        android:layout_marginBottom="20dp" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:background="@drawable/corners_bg">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"></RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PM2.5"
+                    android:id="@+id/tv_pm_page2"
+                    android:textColor="#ff000000"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:textIsSelectable="false"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true" />
+                <com.prolific.pl2303hxdsimpletest.Widget.SpringProgressView
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spring_progress_view_pm25"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CO2"
+                    android:id="@+id/tv_co2_page2"
+                    android:textColor="#f7000000"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true" />
+
+                <com.prolific.pl2303hxdsimpletest.Widget.SpringProgressView
+                    android:id="@+id/spring_progress_view_co2"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:longClickable="false"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                </com.prolific.pl2303hxdsimpletest.Widget.SpringProgressView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.4"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VOC"
+                    android:id="@+id/tv_voc_page2"
+                    android:textColor="#f7000000"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true" />
+                <com.prolific.pl2303hxdsimpletest.Widget.SpringProgressView
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spring_progress_view_voc"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1"></RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="0.1">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="0dp"
+                android:layout_gravity="right"
+
+                android:layout_weight="1.35">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button"
+                    android:layout_weight="0.2">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="控"
+                        android:textSize="30sp"
+                        android:textColor="#ffafb0ff"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="20dp" />
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="制"
+                        android:textColor="#ffafb0ff"
+                        android:layout_centerInParent="true"
+                        android:textSize="30px" />
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="端"
+                        android:textSize="30sp"
+                        android:layout_alignParentBottom="true"
+
+                        android:layout_marginBottom="20dp"
+                        android:textColor="#ffafb0ff"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:background="@drawable/corners_bg">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.4"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/bt_fulizi"
+                        android:layout_width="60dp"
+                        android:layout_height="42dp"
+                        android:background="@drawable/fulizi"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="40dp" />
+                    <Button
+                        android:id="@+id/bt_fulizi1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fulizi"
+
+                        android:textColor="#ff000000"
+                        android:layout_gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|bottom|fill_vertical"
+                        android:textSize="20sp"
+                        android:background="#01000000"
+                        android:layout_alignParentEnd="false"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/bt_qingxiangji"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/fat_qingjiangji"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp" />
+
+                    <Button
+                        android:id="@+id/bt_qingxiangji1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qingxiangji"
+                        android:textColor="#ff000000"
+                        android:textIsSelectable="true"
+                        android:textSize="20sp"
+                        android:background="#01000000"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="50dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+                    <Button
+
+                        android:id="@+id/bt_jiashi"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:background="@drawable/fat_po"
+                        android:layout_marginLeft="40dp"
+                        android:focusableInTouchMode="false"
+                        android:baselineAlignBottom="false"
+                        android:layout_alignWithParentIfMissing="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_alignParentBottom="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_centerVertical="true" />
+                    <Button
+                        android:id="@+id/bt_jiashi1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jiashiqi"
+                        android:textColor="#ff000000"
+                        android:background="#01000000"
+                        android:layout_centerVertical="true"
+
+                        android:textSize="20sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/bt_fengshan"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/fengshan"
+                        android:layout_gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="false"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp" />
+                    <Button
+                        android:id="@+id/bt_fengshan1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fengshan"
+                        android:background="#01000000"
+                        android:textColor="#ff000000"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="50dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+        </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yaokongqi"
+                android:layout_weight="2">
+                <Button
+                    android:id="@+id/bt_duli_dingshi"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:text="@string/duli_dingshi"
+                    android:background="@drawable/duli"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    android:textColor="#ff000000"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="30dp" />
+                <Button
+                    android:id="@+id/bt_duli_denglizi"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                   android:text="@string/duli_denglizi"
+                    android:background="@drawable/duli"
+                    android:textSize="15dp"
+                    android:textColor="#ff000000"
+                    android:layout_marginRight="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="30dp" />
+                <Button
+                    android:id="@+id/bt_duli_huafen"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:text="@string/duli_huafen"
+                    android:background="@drawable/duli"
+                    android:textSize="15dp"
+                    android:textColor="#ff000000"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="19dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="100dp" />
+                <Button
+                    android:id="@+id/bt_duli_zhineng_fengliang"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:text="@string/duli_zhineng_fengliang"
+                    android:background="@drawable/duli"
+                    android:textSize="12dp"
+                    android:textColor="#ff000000"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="false"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_alignParentTop="true" />
+                <Button
+                    android:id="@+id/bt_duli_switch"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:text="@string/duli_kai_guan"
+                    android:background="@drawable/duli"
+                    android:textSize="15dp"
+                    android:textColor="#ff000000"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginLeft="19dp" />
+
+                <Button
+                    android:id="@+id/bt_xuexi"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/duli"
+                    android:layout_marginRight="22dp"
+                    android:textColor="#ff000000"
+                    android:textSize="12dp"
+                    android:layout_marginTop="200dp"
+                    android:layout_alignParentTop="true"
+                    android:text="学习" />
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5">
+
+            <Button
+                android:id="@+id/rb_shoudong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/moudle_handle"
+                android:textSize="25sp"
+
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="70dp" />
+            <!--<TextView-->
+                <!--android:id="@+id/moudle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="20dp"-->
+                <!--android:text="手动模式"-->
+                <!--android:textColor="#ffffea3c"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_marginTop="50dp"/>-->
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_next"
+                android:background="@drawable/auto_setting_none"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"/>
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="自动设置"-->
+                <!--android:layout_above="@+id/bt_next"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textColor="#ffffea3c"-->
+               <!--android:layout_alignLeft="@+id/bt_next"/>-->
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+
+
+    </LinearLayout>
+</LinearLayout>
